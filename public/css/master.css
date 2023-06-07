@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: top;
+    flex-direction: column;
 }
 
 .nav {
@@ -43,4 +44,25 @@ body {
 .nav-item a {
     text-decoration: none;
     color: black;
+}
+
+.wellcome {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wellcome h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-color-main);
+}
+
+.wellcome p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-main);
 }
