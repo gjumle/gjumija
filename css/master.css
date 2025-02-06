@@ -9,6 +9,13 @@
         --fg-color: #FFFFFF;
     }
 
+:root {
+    --light-blue: #00A8E8;
+    --blue: #007EA7;
+    --navy-blue: #003459;
+    --dark-blue: #00171F;
+}
+
 body {
     margin: 0;
     padding: 0;
