@@ -16,49 +16,66 @@
     --dark-blue: #00171F;
 }
 
-body {
+.main, body {
     margin: 0;
     padding: 0;
 
     font-family: "Fira Code", serif;
     font-size: 1vh;
     
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
 
     background-color: var(--bg-color);
     color: var(--fg-color);
 }
 
-.main {
+.container {
     background-color: var(--bg-color);
     color: var(--fg-color);
+
+    display: grid;
+    grid-template-areas: 
+        ". nav nav ."
+        ". .  flash-card ."
+        ". bio . . "
+        ". footer footer .";
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    gap: 25px;
 }
 
 .nav {
-    margin-top: 1vh;
-    /*background-color: var(--dark-bg-color);*/
-    width: 60vw;
-    display: flex;
-    justify-content: center;
+    grid-area: nav;
 }
 
 .nav-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-    margin: 1vh;
+    display: grid;
+    grid-template-areas:
+        "nav-logo nav-button nav-button nav-button";
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 20px;
 }
 
-.nav-logo {
-    margin-right: 20vw;
+.nav-button button {
+    margin-left: 400px;
+}
+
+.flash-card {
+    grid-area: flash-card;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 .nav-button {
     width: 5vw;
+    height: 5vh;
     padding: 1vh;
 }
 
@@ -66,10 +83,6 @@ body {
     text-decoration: none;
     background-color: var(--bg-color);
     color: var(--fg-color);
-}
-
-.nav-button button {
-    margin-left: 30vw;
 }
 
 .mode-button {
@@ -98,29 +111,4 @@ body {
 
 .dark .mode-button.dark {
     display:  none;
-}
-
-.flash-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    height: 30vh;
-    margin-top: 5vh;
-}
-
-.items {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--bg-color);
-    align-items: center;
-}
-
-.item {
-    margin: 2.5vh;
-}
-
-.item img {
-    height: 25vh;
-    border-radius: 50%;
 }
