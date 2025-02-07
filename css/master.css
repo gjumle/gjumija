@@ -161,7 +161,7 @@ body {
     grid-area: work;
     grid-template-areas:
         "photography programing"
-        "editing .";
+        "editing sport";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2vh;
@@ -203,6 +203,10 @@ body {
 
 .editing {
     grid-area: editing;
+}
+
+.sport {
+    grid-area: sport;
 }
 
 .footer {
