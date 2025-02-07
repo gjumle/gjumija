@@ -22,32 +22,68 @@
     <body>
         <div class="main">
             <div class="nav">
-                <div class="nav-buttons">
-                    <div class="nav-button nav-logo">
-                        <a href="index.html">Logo</a>
-                    </div>
-                    <div class="nav-button">
-                        <a href="gallery.html">Galerie</a>
-                    </div>
-                    <div class="nav-button">
-                        <a href="contact.html">Kontakt</a>
-                    </div>
-                    <div class="nav-button">
-                        <button class="mode-button light" onclick="setTheme('light')"><img src="svg/light-mode.svg" alt="dark-mode-button"></button>
-                        <button class="mode-button dark" onclick="setTheme('dark')"><img src="svg/dark-mode.svg" alt="light-mode-button"></button>
-                    </div>
+                <div class="nav-button nav-logo">
+                    <a href="index.html">Logo</a>
+                </div>
+                <div class="nav-button nav-gallery">
+                    <a href="gallery.html">Galerie</a>
+                </div>
+                <div class="nav-button nav-contact">
+                    <a href="contact.html">Kontakt</a>
+                </div>
+                <div class="nav-button nav-mode-button">
+                    <button class="mode-button light" onclick="setTheme('light')"><img src="svg/light-mode.svg" alt="dark-mode-button"></button>
+                    <button class="mode-button dark" onclick="setTheme('dark')"><img src="svg/dark-mode.svg" alt="light-mode-button"></button>
                 </div>
             </div>
-            <div class="flash-card">
-                <div class="items">
-                    <div class="item">
-                        <img src="svg/profile.jpg" alt="profiel-photo">
+            <div class="flash-card profile">
+                <div class="image">
+                    <img src="svg/profile.jpg" alt="profiel-photo">
+                </div>
+                <div class="text">
+                    <h1>Ahoj!</h1>
+                    <p>jmenuji se Leoš, je mi <p id="age"></p> let a jsem rád, že tě tu vidím.</p>
+                    <p>Na této stránce najdeš jak veškerou moji tvorbu,</p>
+                    <p>tak odkazy a kontatky na mně.</p>
+                </div>
+            </div>
+            <div class="divider">
+                <h1>Moje práce</h1>
+            </div>
+            <div class="work">
+                <div class="work-card photography">
+                    <div class="text">
+                        <h1>Focení</h1>
+                        <li>Canon EOS 700D</li>
+                        <br>
+                        <li>Polarizační filtr</li>
                     </div>
-                    <div class="item" id="text">
-                        <h1>Ahoj!</h1>
-                        <p>jmenuji se Leoš, je mi <p id="age"></p> let a jsem rád, že tě tu vidím.</p>
-                        <p>Na této stránce najdeš jak veškerou moji tvorbu,</p>
-                        <p>tak odkazy a kontatky na mně.</p>
+                    <div class="image">
+                        <img src="svg/photo.svg" alt="">
+                    </div>
+                </div>
+                <div class="work-card programing">
+                    <div class="text">
+                        <h1>Programování</h1>
+                        <li>HTML</li>
+                        <br>
+                        <li>CSS</li>
+                        <br>
+                        <li>JS</li>
+                    </div>
+                    <div class="image">
+                        <img src="svg/programing.svg" alt="">
+                    </div>
+                </div>
+                <div class="work-card editing">
+                    <div class="text">
+                        <h1>Editace</h1>
+                        <li>After Effects</li>
+                        <br>
+                        <li>Premiere Pro</li>
+                    </div>
+                    <div class="image">
+                        <img src="svg/editing.svg" alt="">
                     </div>
                 </div>
             </div>
