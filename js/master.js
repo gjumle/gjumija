@@ -9,3 +9,9 @@ const getTheme = () => {
 };
 
 getTheme();
+
+
+const d = new Date();
+const birth = 2003;
+
+document.getElementById("age").innerHTML = d.getFullYear() - birth;
