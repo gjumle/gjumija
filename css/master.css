@@ -38,6 +38,8 @@ body {
 
     background-color: var(--bg-color);
     color: var(--fg-color);
+
+    justify-items: center;
 }
 
 .nav {
@@ -45,9 +47,12 @@ body {
 
     margin-top: 1vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 1fr;
     grid-template-areas:
-        "nav-logo . nav-gallery nav-contact . nav-mode-button";
+    "nav-logo . nav-gallery nav-contact . nav-mode-button";
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 1fr;  
+
+    align-items: center;
+    justify-items: center;
 }
 
 .nav-logo {
@@ -55,7 +60,6 @@ body {
 }
 
 .nav-button {
-    width: 5vw;
     padding: 1vh;
 }
 
@@ -107,11 +111,7 @@ body {
 
 .divider {
     grid-area: divider;
-    background-color: var(--fg-color);
-    color: var(--bg-color);
-
     text-align: center;
-    border-radius: 25px;
 }
 
 .flash-card {
@@ -149,26 +149,33 @@ body {
         "editing .";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5vh;
+    gap: 2vh;
+
+    background-color: var(--fg-color);
+    color: var(--bg-color);
 
     border: 5px solid var(--fg-color);
     border-radius: 25px;
-    padding: 15px;
+    padding: 25px;
 }
 
 .work-card {
     display: grid;
     grid-template-areas:
-        "image ."
-        "text text";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .1fr .1fr;
+        ". image ."
+        ". text .";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .1fr;
 
-    align-items: center;
+    padding: 5px;
 }
 
 .work-card > .image img {
-    height: 2vh;
+    height: 3vh;
+}
+
+.work-card > .text li {
+    margin-left: 20px;
 }
 
 .photography {
