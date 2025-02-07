@@ -32,7 +32,8 @@ body {
         ". nav ."
         ". profile ."
         ". divider ."
-        ". work .";
+        ". work ."
+        ". footer .";
     grid-template-columns: 1fr 2fr 1fr;
     gap: 3vh;
 
@@ -55,6 +56,8 @@ body {
 
     align-items: center;
     justify-items: center;
+
+    overflow: auto;
 }
 
 .nav-logo {
@@ -114,6 +117,11 @@ body {
 .divider {
     grid-area: divider;
     text-align: center;
+    transition: 150ms;
+}
+
+.divider:hover {
+    font-size: 40px;
 }
 
 .flash-card {
@@ -139,8 +147,13 @@ body {
 }
 
 .flash-card > .image img {
-    height: 25vh;
+    height: 30vh;
     border-radius: 50%;
+    transition: 150ms;
+}
+
+.flash-card>.image img:hover {
+    height: 40vh;
 }
 
 .work {
@@ -190,4 +203,37 @@ body {
 
 .editing {
     grid-area: editing;
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    grid-template-areas:
+        "footer-logo . privacy cookies";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vh;
+
+    padding: 5px;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: var(--fg-color);
+
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.privacy {
+    grid-area: privacy;
+}
+
+.cookies {
+    grid-area: cookies;
 }

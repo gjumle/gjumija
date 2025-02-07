@@ -11,7 +11,20 @@ const getTheme = () => {
 getTheme();
 
 
-const d = new Date();
-const birth = 2003;
+function getAge(birth) {
+    const date = new Date();
+    let dateYear = date.getFullYear();
+    let dateMonth = date.getMonth();
 
-document.getElementById("age").innerHTML = d.getFullYear() - birth;
+    let birthYear = birth.slice(0, 4);
+    let birthMonth = birth.slice(5, 7);
+
+    if (birthMonth >= dateMonth) {
+        return dateYear - birthYear - 1;
+    } else {
+        return dateYear - birthYear;
+    }
+}
+
+
+document.getElementById("age").innerHTML = getAge("2003-10");
