@@ -73,8 +73,8 @@ body {
 }
 
 .mode-button {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.75vh;
+    height: 2.75vh;
     cursor: pointer;
     border: none;
     background-color: transparent;
