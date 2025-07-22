@@ -163,7 +163,7 @@ body {
 
 .flash-card > .image img {
     height: 30vh;
-    border-radius: 50%;
+    border-radius: 25px;
     transition: 150ms;
 }
 
@@ -224,6 +224,92 @@ body {
     grid-area: sport;
 }
 
+.gallery {
+    display: grid;
+    grid-area: work;
+    grid-template-areas:
+        "r3-2-9"
+        "landscape"
+        "portrait"
+        "street";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2vh;
+
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+
+    border: 5px solid var(--fg-color);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.gallery-card {
+    display: grid;
+    grid-template-areas:
+        "image1 image2 image3"
+        "image4 text1 image5"
+        "image6 image7 image8";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.gallery-card img {
+    height: 4vw;
+    padding: 0.2vw;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.image4 {
+    grid-area: image4;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.image5 {
+    grid-area: image5;
+}
+
+.image6 {
+    grid-area: image6;
+}
+
+.image7 {
+    grid-area: image7;
+}
+
+.image8 {
+    grid-area: image8;
+}
+
+.r3-2-9 {
+    grid-area: r3-2-9;
+}
+
+.landscape {
+    grid-area: landscape;
+}
+
+.portrait {
+    grid-area: portrait;
+}
+
 .footer {
     display: grid;
     grid-area: footer;
@@ -254,5 +340,5 @@ body {
 }
 
 .cookies {
-    grid-area: cookies;
+    grid-area: cookies
 }
