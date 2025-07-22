@@ -14,7 +14,7 @@ body {
     padding: 0;
 
     font-family: "Fira Code", serif;
-    font-size: 1vh;
+    font-size: 0.75vh;
 
     background-color: var(--bg-color);
     color: var(--fg-color);
@@ -96,11 +96,11 @@ body {
 }
 
 .mode-button {
-    width: 2.75vh;
-    height: 2.75vh;
+    width: 2.8vh;
+    height: 2.8vh;
     cursor: pointer;
     border: none;
-    background-color: transparent;
+    background-color: #003459;
     border-radius: 50%;
 }
 
