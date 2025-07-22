@@ -77,6 +77,24 @@ body {
     color: var(--fg-color);
 }
 
+.nav-logo img {
+    height: 7.5vh;
+    border-radius: 25px;
+}
+
+.logo.light {
+    display: none;
+}
+
+.dark .logo.light {
+    display: inline;
+    background-color: #FFFFFF;
+}
+
+.dark .logo.dark {
+    display: none;
+}
+
 .mode-button {
     width: 2.75vh;
     height: 2.75vh;
