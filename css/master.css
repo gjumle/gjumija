@@ -42,10 +42,8 @@ body {
     margin-top: 1vh;
     display: grid;
     grid-template-areas:
-    "nav-logo nav-gallery nav-contact nav-mode-button";
-    grid-template-columns: 1fr 1fr 1fr 1fr;  
-
-    gap: 14vh;
+    "nav-logo nav-gallery nav-contact nav-about nav-projects nav-mode-button";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  
 
     align-items: center;
     justify-items: center;
@@ -65,6 +63,14 @@ body {
 
 .nav-contact {
     grid-area: nav-contact;
+}
+
+.nav-about {
+    grid-area: nav-about;
+}
+
+.nav-projects {
+    grid-area: nav-projects;
 }
 
 .nav-mode-button {
