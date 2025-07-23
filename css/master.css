@@ -85,7 +85,7 @@ body {
 
 .nav-logo img {
     height: 7.5vh;
-    border-radius: 25px;
+    border-radius: 1vw;
 }
 
 .logo.light {
@@ -163,7 +163,7 @@ body {
 
 .flash-card > .image img {
     height: 30vh;
-    border-radius: 25px;
+    border-radius: 1vw;
     transition: 150ms;
 }
 
@@ -185,8 +185,8 @@ body {
     color: var(--bg-color);
 
     border: 5px solid var(--fg-color);
-    border-radius: 25px;
-    padding: 25px;
+    border-radius: 1vw;
+    padding: 1vw;
 }
 
 .work-card {
@@ -197,7 +197,7 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: .1fr;
 
-    padding: 5px;
+    padding: 0.5vw;
 }
 
 .work-card > .image img {
@@ -205,7 +205,7 @@ body {
 }
 
 .work-card > .text li {
-    margin-left: 20px;
+    margin-left: 0.5vw;
 }
 
 .photography {
@@ -227,87 +227,66 @@ body {
 .gallery {
     display: grid;
     grid-area: work;
-    grid-template-areas:
-        "r3-2-9"
-        "landscape"
-        "portrait"
-        "street";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2vh;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(20, 5vw);
+    gap: 0.5vw;
 
     background-color: var(--fg-color);
     color: var(--bg-color);
 
     border: 5px solid var(--fg-color);
-    border-radius: 25px;
-    padding: 25px;
+    border-radius: 1vw;
+    padding: 1vw;
 }
 
-.gallery-card {
-    display: grid;
-    grid-template-areas:
-        "image1 image2 image3"
-        "image4 text1 image5"
-        "image6 image7 image8";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    align-items: center;
+.gallery_text {
+    font-size: 2.5vw;
+}
+
+.gallery {
     justify-items: center;
+    align-items: center;
 }
 
-.gallery-card img {
-    height: 4vw;
-    padding: 0.2vw;
+.gallery_item--1 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-.image1 {
-    grid-area: image1;
+.gallery_item--2 {
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-.image2 {
-    grid-area: image2;
+.gallery_item--3 {
+    grid-column-start: 1;
+    grid-column-end: 19;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
-.image3 {
-    grid-area: image3;
+.gallery_item--4 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 7;
 }
 
-.image4 {
-    grid-area: image4;
-}
-
-.text1 {
-    grid-area: text1;
-}
-
-.image5 {
-    grid-area: image5;
-}
-
-.image6 {
-    grid-area: image6;
-}
-
-.image7 {
-    grid-area: image7;
-}
-
-.image8 {
-    grid-area: image8;
-}
-
-.r3-2-9 {
-    grid-area: r3-2-9;
-}
-
-.landscape {
-    grid-area: landscape;
-}
-
-.portrait {
-    grid-area: portrait;
+.gallery_item--5 {
+    grid-column-start: 10;
+    grid-column-end: 19;
+    grid-row-start: 5;
+    grid-row-end: 7;
 }
 
 .footer {
@@ -318,7 +297,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2vh;
 
-    padding: 5px;
+    padding: 0.5vw;
 }
 
 .footer-logo {
