@@ -136,7 +136,7 @@ body {
 }
 
 .divider:hover {
-    font-size: 40px;
+    transform: scale(1.8);
 }
 
 .flash-card {
@@ -168,7 +168,7 @@ body {
 }
 
 .flash-card>.image img:hover {
-    height: 40vh;
+    transform: scale(1.8);
 }
 
 .work {
@@ -243,6 +243,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 5px solid var(--fg-color);
+}
+
+.gallery_item img {
+    transition: 150ms;
+}
+
+.gallery_item img:hover {
+    transform: scale(1.8);
 }
 
 .gallery_text {
